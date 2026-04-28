@@ -104,3 +104,16 @@ Source Code :
 42. Baris standar Python untuk memastikan fungsi main() hanya berjalan jika file ini dieksekusi langsung.
 
 43. Memanggil fungsi utama untuk menjalankan seluruh program.
+
+    OUTPUT PROGRAM
+
+    <img width="432" height="873" alt="Screenshot 2026-04-28 234254" src="https://github.com/user-attachments/assets/29434a58-b079-41c8-8521-270cbe32a5e8" />
+
+<img width="610" height="924" alt="Screenshot 2026-04-28 234314" src="https://github.com/user-attachments/assets/1c90c140-7806-47bf-8efd-e115d57cab50" />
+
+<img width="513" height="738" alt="Screenshot 2026-04-28 234328" src="https://github.com/user-attachments/assets/60aaf750-12fd-4bb0-82d7-804e7fac8c1e" />
+
+LINK : https://youtu.be/3xQpoYgUmAA?si=uHpEWyJJ1lyAR6Ga
+
+
+
