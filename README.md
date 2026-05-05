@@ -1,6 +1,6 @@
 Tugas Akhir Percobaan 2
 
-Judul Program : Sistem Antrian Pasien Klinik
+Judul Program : Sistem Ranking Skor Game
 
 Program ini merupakan simulasi sistem sederhana untuk mengelola dan menampilkan ranking skor pemain dalam sebuah game. Pengguna dapat memasukkan data berupa nama pemain dan skor yang diperoleh, kemudian sistem akan mengurutkan data tersebut dari skor tertinggi ke terendah. Hasil akhir berupa daftar pemain yang sudah terurut sehingga mudah untuk melihat siapa yang memiliki skor paling tinggi. Program ini menggunakan algoritma Exchange Sort, yaitu metode pengurutan dengan cara membandingkan setiap elemen dengan elemen lainnya, lalu menukar posisi jika urutannya tidak sesuai. Pendekatan ini cukup sederhana dan mudah dipahami, sehingga cocok digunakan untuk kasus skala kecil seperti data skor pemain.
 
@@ -13,9 +13,6 @@ Source Code :
 
 
 <img width="768" height="375" alt="Screenshot 2026-05-05 221547" src="https://github.com/user-attachments/assets/9f56cade-ccae-4a20-a186-971ab5171bfc" />
-
-
-<img width="480" height="821" alt="Screenshot 2026-05-05 221438" src="https://github.com/user-attachments/assets/dc5626c3-9cb0-4879-80be-ff8e17ab6914" />
 
 
 
@@ -109,3 +106,11 @@ Source Code :
 42. Baris standar Python untuk memastikan fungsi main() hanya berjalan jika file ini dieksekusi langsung.
 
 43. Memanggil fungsi utama untuk menjalankan seluruh program.
+
+    OUTPUT PROGRAM
+
+
+    <img width="480" height="821" alt="Screenshot 2026-05-05 221438" src="https://github.com/user-attachments/assets/dc5626c3-9cb0-4879-80be-ff8e17ab6914" />
+
+
+LINK :
