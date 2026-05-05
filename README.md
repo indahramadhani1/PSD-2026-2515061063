@@ -1,4 +1,4 @@
-Tugas Akhir Percobaan 1
+Tugas Akhir Percobaan 2
 
 Judul Program : Sistem Antrian Pasien Klinik
 
@@ -19,88 +19,88 @@ Source Code :
 <img width="340" height="103" alt="Screenshot 2026-04-28 213556" src="https://github.com/user-attachments/assets/16483c00-7834-4b2e-aab7-d2c50fae3237" />
 
 
-1. Mendefinisikan fungsi bernama menu untuk membungkus kode yang menampilkan daftar pilihan menu sistem antrian pasien.
+1. saya mendefinisikan fungsi tukar, fungsi ini digunakan untuk menukar posisi dua data dalam array.
+2. 
+3. Mencetak judul sistem ke layar dengan baris baru di awal (\n).
 
-2. Mencetak judul sistem ke layar dengan baris baru di awal (\n).
+4. Mencetak opsi pertama menu yaitu menampilkan daftar antrian.
 
-3. Mencetak opsi pertama menu yaitu menampilkan daftar antrian.
+5. Mencetak opsi kedua menu yaitu menambah pasien ke antrian.
 
-4. Mencetak opsi kedua menu yaitu menambah pasien ke antrian.
+6. Mencetak opsi ketiga menu yaitu memanggil pasien.
 
-5. Mencetak opsi ketiga menu yaitu memanggil pasien.
+7. Mencetak opsi keempat menu yaitu melihat jumlah antrian.
 
-6. Mencetak opsi keempat menu yaitu melihat jumlah antrian.
+8. Mencetak opsi nol untuk menghentikan program.
 
-7. Mencetak opsi nol untuk menghentikan program.
+9. Mendefinisikan fungsi utama program tempat seluruh logika inti berjalan.
 
-8. Mendefinisikan fungsi utama program tempat seluruh logika inti berjalan.
+10. Membuat list kosong bernama antrian untuk menyimpan nama pasien.
 
-9. Membuat list kosong bernama antrian untuk menyimpan nama pasien.
+11. Membuat variabel running untuk menjaga agar perulangan program tetap berjalan.
 
-10. Membuat variabel running untuk menjaga agar perulangan program tetap berjalan.
+12. Memulai perulangan utama selama variabel running bernilai True.
 
-11. Memulai perulangan utama selama variabel running bernilai True.
+13. Memanggil fungsi menu yang sudah didefinisikan di awal untuk tampil ke layar.
 
-12. Memanggil fungsi menu yang sudah didefinisikan di awal untuk tampil ke layar.
+14. Memulai blok penanganan error agar program tidak crash jika user salah input.
 
-13. Memulai blok penanganan error agar program tidak crash jika user salah input.
+15. Mengambil input pilihan menu dari user dan mengubahnya menjadi bilangan bulat (integer).
 
-14. Mengambil input pilihan menu dari user dan mengubahnya menjadi bilangan bulat (integer).
+16. Menangkap error jika user memasukkan sesuatu yang bukan angka (misal: huruf).
 
-15. Menangkap error jika user memasukkan sesuatu yang bukan angka (misal: huruf).
+17. Menampilkan pesan peringatan jika terjadi ValueError.
 
-16. Menampilkan pesan peringatan jika terjadi ValueError.
+18. Mengulang perulangan dari awal menu jika terjadi error input.
 
-17. Mengulang perulangan dari awal menu jika terjadi error input.
+19. Mengecek jika user memilih menu nomor 1.
 
-18. Mengecek jika user memilih menu nomor 1.
+20. Mencetak judul daftar antrian pasien.
 
-19. Mencetak judul daftar antrian pasien.
+21. Mengecek apakah jumlah data pada list antrian sama dengan 0.
 
-20. Mengecek apakah jumlah data pada list antrian sama dengan 0.
+22. Jika kosong, menampilkan pesan bahwa antrian masih kosong.
 
-21. Jika kosong, menampilkan pesan bahwa antrian masih kosong.
+23. Jika tidak kosong, melakukan perulangan untuk menampilkan seluruh pasien dalam antrian.
 
-22. Jika tidak kosong, melakukan perulangan untuk menampilkan seluruh pasien dalam antrian.
+24. Menampilkan nomor urut pasien beserta nama pasien yang sedang menunggu.
 
-23. Menampilkan nomor urut pasien beserta nama pasien yang sedang menunggu.
+25. Mengecek jika user memilih menu nomor 2.
 
-24. Mengecek jika user memilih menu nomor 2.
+26. Meminta user memasukkan nama pasien yang akan didaftarkan ke antrian.
 
-25. Meminta user memasukkan nama pasien yang akan didaftarkan ke antrian.
+27. Menambahkan nama pasien ke bagian belakang list menggunakan fungsi append().
 
-26. Menambahkan nama pasien ke bagian belakang list menggunakan fungsi append().
+28. Menampilkan pesan bahwa pasien berhasil ditambahkan ke antrian.
 
-27. Menampilkan pesan bahwa pasien berhasil ditambahkan ke antrian.
+29. Mengecek jika user memilih menu nomor 3.
 
-28. Mengecek jika user memilih menu nomor 3.
+30. Mengecek apakah list antrian kosong.
 
-29. Mengecek apakah list antrian kosong.
+31. Jika kosong, menampilkan pesan bahwa tidak ada pasien yang dapat dipanggil.
 
-30. Jika kosong, menampilkan pesan bahwa tidak ada pasien yang dapat dipanggil.
+32. Jika tidak kosong, mengambil dan menghapus pasien paling depan menggunakan pop(0).
 
-31. Jika tidak kosong, mengambil dan menghapus pasien paling depan menggunakan pop(0).
+33. Menyimpan nama pasien yang dipanggil ke variabel panggil.
 
-32. Menyimpan nama pasien yang dipanggil ke variabel panggil.
+34. Menampilkan pesan agar pasien tersebut masuk ke ruang pemeriksaan.
 
-33. Menampilkan pesan agar pasien tersebut masuk ke ruang pemeriksaan.
+35. Mengecek jika user memilih menu nomor 4.
 
-34. Mengecek jika user memilih menu nomor 4.
+36. Menghitung jumlah pasien dalam antrian menggunakan len(antrian).
 
-35. Menghitung jumlah pasien dalam antrian menggunakan len(antrian).
+37. Menampilkan total pasien yang sedang menunggu.
 
-36. Menampilkan total pasien yang sedang menunggu.
+38. Mengecek jika user memilih menu nomor 0.
 
-37. Mengecek jika user memilih menu nomor 0.
+39. Mengubah variabel running menjadi False agar perulangan berhenti.
 
-38. Mengubah variabel running menjadi False agar perulangan berhenti.
+40. Menampilkan pesan Program ditutup. See you next time!
 
-39. Menampilkan pesan Program ditutup. See you next time!
+41. Jika user memasukkan angka yang tidak ada di menu.
 
-40. Jika user memasukkan angka yang tidak ada di menu.
+42. Memberi tahu bahwa pilihan menu tidak tersedia.
 
-41. Memberi tahu bahwa pilihan menu tidak tersedia.
+43. Baris standar Python untuk memastikan fungsi main() hanya berjalan jika file ini dieksekusi langsung.
 
-42. Baris standar Python untuk memastikan fungsi main() hanya berjalan jika file ini dieksekusi langsung.
-
-43. Memanggil fungsi utama untuk menjalankan seluruh program.
+44. Memanggil fungsi utama untuk menjalankan seluruh program.
