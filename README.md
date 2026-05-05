@@ -15,97 +15,60 @@ Source Code :
 <img width="768" height="375" alt="Screenshot 2026-05-05 221547" src="https://github.com/user-attachments/assets/9f56cade-ccae-4a20-a186-971ab5171bfc" />
 
 
+Mendefinisikan fungsi bernama `tukar` yang digunakan untuk menukar posisi dua data dalam array.
 
+Menyimpan data pada indeks ke-`i` ke dalam variabel sementara `temp` agar tidak hilang saat proses penukaran.
 
+Memindahkan data pada indeks ke-`j` ke posisi indeks ke-`i`.
 
+Memasukkan kembali data yang disimpan di `temp` ke posisi indeks ke-`j` sehingga proses pertukaran selesai dengan benar.
 
+Mendefinisikan fungsi bernama `exchange_sort` yang digunakan untuk mengurutkan data pemain berdasarkan skor dari tertinggi ke terendah.
 
+Membuat perulangan pertama untuk menentukan posisi data yang akan dibandingkan.
 
-1. saya mendefinisikan fungsi tukar, fungsi ini digunakan untuk menukar posisi dua data dalam array.
+Membuat perulangan kedua untuk membandingkan data dengan elemen setelahnya.
 
-2. Mencetak judul sistem ke layar dengan baris baru di awal (\n).
+Melakukan pengecekan apakah skor pemain lebih kecil dibandingkan pemain lain agar bisa disusun dari nilai terbesar ke terkecil.
 
-3. Mencetak opsi pertama menu yaitu menampilkan daftar antrian.
+Memanggil fungsi `tukar` jika kondisi terpenuhi untuk menukar posisi data.
 
-4. Mencetak opsi kedua menu yaitu menambah pasien ke antrian.
+Mengulangi proses perbandingan dan penukaran sampai seluruh data tersusun dengan benar.
 
-5. Mencetak opsi ketiga menu yaitu memanggil pasien.
+Mendefinisikan fungsi utama bernama `main` sebagai pusat jalannya program.
 
-6. Mencetak opsi keempat menu yaitu melihat jumlah antrian.
+Memulai proses input jumlah pemain dengan menggunakan penanganan error agar input harus berupa angka.
 
-7. Mencetak opsi nol untuk menghentikan program.
+Menampilkan pesan kesalahan jika input tidak valid dan menghentikan program.
 
-8. Mendefinisikan fungsi utama program tempat seluruh logika inti berjalan.
+Membuat list kosong bernama `arr` untuk menyimpan data pemain.
 
-9. Membuat list kosong bernama antrian untuk menyimpan nama pasien.
+Menampilkan instruksi kepada pengguna untuk memasukkan data pemain.
 
-10. Membuat variabel running untuk menjaga agar perulangan program tetap berjalan.
+Memulai perulangan untuk menginput data pemain sesuai jumlah yang dimasukkan.
 
-11. Memulai perulangan utama selama variabel running bernilai True.
+Meminta pengguna memasukkan nama pemain.
 
-12. Memanggil fungsi menu yang sudah didefinisikan di awal untuk tampil ke layar.
+Memulai proses input skor dengan validasi menggunakan try-except agar hanya menerima angka.
 
-13. Memulai blok penanganan error agar program tidak crash jika user salah input.
+Menampilkan pesan error jika skor yang dimasukkan tidak valid.
 
-14. Mengambil input pilihan menu dari user dan mengubahnya menjadi bilangan bulat (integer).
+Menyimpan data pemain ke dalam list dalam bentuk dictionary yang berisi nama dan skor.
 
-15. Menangkap error jika user memasukkan sesuatu yang bukan angka (misal: huruf).
+Menampilkan data pemain sebelum dilakukan proses pengurutan sebagai pembanding.
 
-16. Menampilkan pesan peringatan jika terjadi ValueError.
+Melakukan perulangan untuk menampilkan seluruh data pemain yang telah dimasukkan.
 
-17. Mengulang perulangan dari awal menu jika terjadi error input.
+Memanggil fungsi `exchange_sort` untuk mengurutkan data berdasarkan skor tertinggi.
 
-18. Mengecek jika user memilih menu nomor 1.
+Menampilkan hasil data setelah diurutkan.
 
-19. Mencetak judul daftar antrian pasien.
+Melakukan perulangan kembali untuk menampilkan data yang sudah dalam kondisi terurut dari skor tertinggi ke terendah.
 
-20. Mengecek apakah jumlah data pada list antrian sama dengan 0.
+Menjalankan fungsi utama menggunakan blok standar Python agar program dapat dieksekusi.
 
-21. Jika kosong, menampilkan pesan bahwa antrian masih kosong.
+Memastikan fungsi `main` hanya berjalan saat file dijalankan secara langsung.
 
-22. Jika tidak kosong, melakukan perulangan untuk menampilkan seluruh pasien dalam antrian.
-
-23. Menampilkan nomor urut pasien beserta nama pasien yang sedang menunggu.
-
-24. Mengecek jika user memilih menu nomor 2.
-
-25. Meminta user memasukkan nama pasien yang akan didaftarkan ke antrian.
-
-26. Menambahkan nama pasien ke bagian belakang list menggunakan fungsi append().
-
-27. Menampilkan pesan bahwa pasien berhasil ditambahkan ke antrian.
-
-28. Mengecek jika user memilih menu nomor 3.
-
-29. Mengecek apakah list antrian kosong.
-
-30. Jika kosong, menampilkan pesan bahwa tidak ada pasien yang dapat dipanggil.
-
-31. Jika tidak kosong, mengambil dan menghapus pasien paling depan menggunakan pop(0).
-
-32. Menyimpan nama pasien yang dipanggil ke variabel panggil.
-
-33. Menampilkan pesan agar pasien tersebut masuk ke ruang pemeriksaan.
-
-34. Mengecek jika user memilih menu nomor 4.
-
-35. Menghitung jumlah pasien dalam antrian menggunakan len(antrian).
-
-36. Menampilkan total pasien yang sedang menunggu.
-
-37. Mengecek jika user memilih menu nomor 0.
-
-38. Mengubah variabel running menjadi False agar perulangan berhenti.
-
-39. Menampilkan pesan Program ditutup. See you next time!
-
-40. Jika user memasukkan angka yang tidak ada di menu.
-
-41. Memberi tahu bahwa pilihan menu tidak tersedia.
-
-42. Baris standar Python untuk memastikan fungsi main() hanya berjalan jika file ini dieksekusi langsung.
-
-43. Memanggil fungsi utama untuk menjalankan seluruh program.
 
     OUTPUT PROGRAM
 
