@@ -110,7 +110,8 @@ Source Code :
     OUTPUT PROGRAM
 
 
-    <img width="480" height="821" alt="Screenshot 2026-05-05 221438" src="https://github.com/user-attachments/assets/dc5626c3-9cb0-4879-80be-ff8e17ab6914" />
+   <img width="536" height="822" alt="Screenshot 2026-05-05 222209" src="https://github.com/user-attachments/assets/0dd2ce35-d759-403b-8e5b-cb2d1545520c" />
 
+   
 
 LINK :
