@@ -15,15 +15,15 @@ Source Code :
 <img width="768" height="375" alt="Screenshot 2026-05-05 221547" src="https://github.com/user-attachments/assets/9f56cade-ccae-4a20-a186-971ab5171bfc" />
 
 
-Mendefinisikan fungsi bernama `tukar` yang digunakan untuk menukar posisi dua data dalam array.
+Mendefinisikan fungsi bernama tukar yang digunakan untuk menukar posisi dua data dalam array.
 
-Menyimpan data pada indeks ke-`i` ke dalam variabel sementara `temp` agar tidak hilang saat proses penukaran.
+Menyimpan data pada indeks ke- i ke dalam variabel sementara temp agar tidak hilang saat proses penukaran.
 
-Memindahkan data pada indeks ke-`j` ke posisi indeks ke-`i`.
+Memindahkan data pada indeks ke-j ke posisi indeks ke-i.
 
-Memasukkan kembali data yang disimpan di `temp` ke posisi indeks ke-`j` sehingga proses pertukaran selesai dengan benar.
+Memasukkan kembali data yang disimpan di temp ke posisi indeks ke-j sehingga proses pertukaran selesai dengan benar.
 
-Mendefinisikan fungsi bernama `exchange_sort` yang digunakan untuk mengurutkan data pemain berdasarkan skor dari tertinggi ke terendah.
+Mendefinisikan fungsi bernama exchange_sort yang digunakan untuk mengurutkan data pemain berdasarkan skor dari tertinggi ke terendah.
 
 Membuat perulangan pertama untuk menentukan posisi data yang akan dibandingkan.
 
@@ -31,17 +31,17 @@ Membuat perulangan kedua untuk membandingkan data dengan elemen setelahnya.
 
 Melakukan pengecekan apakah skor pemain lebih kecil dibandingkan pemain lain agar bisa disusun dari nilai terbesar ke terkecil.
 
-Memanggil fungsi `tukar` jika kondisi terpenuhi untuk menukar posisi data.
+Memanggil fungsi tukar jika kondisi terpenuhi untuk menukar posisi data.
 
 Mengulangi proses perbandingan dan penukaran sampai seluruh data tersusun dengan benar.
 
-Mendefinisikan fungsi utama bernama `main` sebagai pusat jalannya program.
+Mendefinisikan fungsi utama bernama main sebagai pusat jalannya program.
 
 Memulai proses input jumlah pemain dengan menggunakan penanganan error agar input harus berupa angka.
 
 Menampilkan pesan kesalahan jika input tidak valid dan menghentikan program.
 
-Membuat list kosong bernama `arr` untuk menyimpan data pemain.
+Membuat list kosong bernama arr untuk menyimpan data pemain.
 
 Menampilkan instruksi kepada pengguna untuk memasukkan data pemain.
 
@@ -59,7 +59,7 @@ Menampilkan data pemain sebelum dilakukan proses pengurutan sebagai pembanding.
 
 Melakukan perulangan untuk menampilkan seluruh data pemain yang telah dimasukkan.
 
-Memanggil fungsi `exchange_sort` untuk mengurutkan data berdasarkan skor tertinggi.
+Memanggil fungsi exchange_sort untuk mengurutkan data berdasarkan skor tertinggi.
 
 Menampilkan hasil data setelah diurutkan.
 
@@ -67,7 +67,7 @@ Melakukan perulangan kembali untuk menampilkan data yang sudah dalam kondisi ter
 
 Menjalankan fungsi utama menggunakan blok standar Python agar program dapat dieksekusi.
 
-Memastikan fungsi `main` hanya berjalan saat file dijalankan secara langsung.
+Memastikan fungsi main hanya berjalan saat file dijalankan secara langsung.
 
 
     OUTPUT PROGRAM
@@ -77,4 +77,4 @@ Memastikan fungsi `main` hanya berjalan saat file dijalankan secara langsung.
 
    
 
-LINK :
+LINK : https://youtu.be/tqywAAjCEJA?si=ASpw_FvoeyDqSego
