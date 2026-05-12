@@ -1,8 +1,8 @@
-Tugas Akhir Percobaan 2
+Tugas Akhir Percobaan 3
 
-Judul Program : Sistem Ranking Skor Game
+Judul Program : Sistem Pengecekan Nama Siswa di Daftar Hadir
 
-Program ini merupakan simulasi sistem sederhana untuk mengelola dan menampilkan ranking skor pemain dalam sebuah game. Pengguna dapat memasukkan data berupa nama pemain dan skor yang diperoleh, kemudian sistem akan mengurutkan data tersebut dari skor tertinggi ke terendah. Hasil akhir berupa daftar pemain yang sudah terurut sehingga mudah untuk melihat siapa yang memiliki skor paling tinggi. Program ini menggunakan algoritma Exchange Sort, yaitu metode pengurutan dengan cara membandingkan setiap elemen dengan elemen lainnya, lalu menukar posisi jika urutannya tidak sesuai. Pendekatan ini cukup sederhana dan mudah dipahami, sehingga cocok digunakan untuk kasus skala kecil seperti data skor pemain.
+Program ini merupakan simulasi sistem sederhana untuk melakukan pengecekan nama siswa pada daftar hadir kelas. Pengguna dapat memasukkan nama siswa yang ingin dicari, kemudian sistem akan memeriksa apakah nama tersebut terdapat pada daftar hadir dan menghitung berapa kali nama muncul. Hasil akhir berupa informasi apakah nama ditemukan atau tidak, beserta jumlah kemunculannya di dalam daftar hadir. Program ini menggunakan algoritma Sequential Searching, yaitu metode pencarian dengan cara memeriksa data satu per satu secara berurutan mulai dari elemen pertama hingga elemen terakhir. Jika data yang dicari ditemukan, maka sistem akan menghitung jumlah kemunculannya. Pendekatan ini sederhana dan mudah dipahami, sehingga cocok digunakan untuk pencarian data dalam jumlah kecil seperti daftar hadir siswa.
 
 Source Code :
 
