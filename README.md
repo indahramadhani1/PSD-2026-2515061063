@@ -6,75 +6,60 @@ Program ini merupakan simulasi sistem sederhana untuk melakukan pengecekan nama 
 
 Source Code :
 
-<img width="697" height="399" alt="Screenshot 2026-05-05 221504" src="https://github.com/user-attachments/assets/fc4cd9d4-f16a-43fd-b5cf-d71dd24caa3a" />
+<img width="898" height="495" alt="Screenshot 2026-05-12 230316" src="https://github.com/user-attachments/assets/b57f4349-46f2-41df-8071-f1a3fb2dcda1" />
 
+<img width="682" height="397" alt="Screenshot 2026-05-12 230331" src="https://github.com/user-attachments/assets/289f031c-78a2-46a5-ab73-02f73699555b" />
 
-<img width="786" height="629" alt="Screenshot 2026-05-05 221535" src="https://github.com/user-attachments/assets/3d1e83e7-d42f-44c0-ad55-fa76962c50c1" />
+Mendefinisikan fungsi bernama sequential_search yang digunakan untuk mencari nama siswa pada daftar hadir menggunakan metode Sequential Searching.
 
+Membuat variabel i dengan nilai awal 0 yang digunakan sebagai indeks untuk memulai pencarian dari data pertama.
 
-<img width="768" height="375" alt="Screenshot 2026-05-05 221547" src="https://github.com/user-attachments/assets/9f56cade-ccae-4a20-a186-971ab5171bfc" />
+Membuat variabel counter dengan nilai awal 0 untuk menghitung jumlah nama yang ditemukan.
 
+Membuat perulangan while untuk memeriksa data satu per satu selama indeks masih kurang dari jumlah data.
 
-Mendefinisikan fungsi bernama tukar yang digunakan untuk menukar posisi dua data dalam array.
+Menampilkan nama yang sedang diperiksa agar pengguna dapat melihat proses pencarian berlangsung.
 
-Menyimpan data pada indeks ke- i ke dalam variabel sementara temp agar tidak hilang saat proses penukaran.
+Melakukan pengecekan apakah nama pada daftar sama dengan nama yang dicari.
 
-Memindahkan data pada indeks ke-j ke posisi indeks ke-i.
+Menambahkan nilai counter sebanyak 1 jika nama ditemukan.
 
-Memasukkan kembali data yang disimpan di temp ke posisi indeks ke-j sehingga proses pertukaran selesai dengan benar.
+Menambahkan nilai indeks i agar proses berpindah ke data berikutnya.
 
-Mendefinisikan fungsi bernama exchange_sort yang digunakan untuk mengurutkan data pemain berdasarkan skor dari tertinggi ke terendah.
+Mengulangi proses pengecekan hingga seluruh data selesai diperiksa.
 
-Membuat perulangan pertama untuk menentukan posisi data yang akan dibandingkan.
-
-Membuat perulangan kedua untuk membandingkan data dengan elemen setelahnya.
-
-Melakukan pengecekan apakah skor pemain lebih kecil dibandingkan pemain lain agar bisa disusun dari nilai terbesar ke terkecil.
-
-Memanggil fungsi tukar jika kondisi terpenuhi untuk menukar posisi data.
-
-Mengulangi proses perbandingan dan penukaran sampai seluruh data tersusun dengan benar.
+Mengembalikan nilai counter sebagai jumlah nama yang ditemukan pada daftar hadir.
 
 Mendefinisikan fungsi utama bernama main sebagai pusat jalannya program.
 
-Memulai proses input jumlah pemain dengan menggunakan penanganan error agar input harus berupa angka.
+Membuat list bernama data yang berisi daftar hadir siswa.
 
-Menampilkan pesan kesalahan jika input tidak valid dan menghentikan program.
+Menghitung jumlah data pada daftar hadir menggunakan fungsi len() lalu menyimpannya ke variabel n.
 
-Membuat list kosong bernama arr untuk menyimpan data pemain.
+Menampilkan seluruh daftar hadir siswa kepada pengguna.
 
-Menampilkan instruksi kepada pengguna untuk memasukkan data pemain.
+Meminta pengguna memasukkan nama yang ingin dicari pada daftar hadir.
 
-Memulai perulangan untuk menginput data pemain sesuai jumlah yang dimasukkan.
+Memanggil fungsi sequential_search untuk melakukan proses pencarian nama siswa.
 
-Meminta pengguna memasukkan nama pemain.
+Menyimpan hasil jumlah nama yang ditemukan ke dalam variabel counter.
 
-Memulai proses input skor dengan validasi menggunakan try-except agar hanya menerima angka.
+Melakukan pengecekan apakah nilai counter lebih besar dari 0 untuk mengetahui apakah nama ditemukan.
 
-Menampilkan pesan error jika skor yang dimasukkan tidak valid.
+Menampilkan pesan bahwa nama ditemukan beserta jumlah kemunculannya jika data ada pada daftar hadir.
 
-Menyimpan data pemain ke dalam list dalam bentuk dictionary yang berisi nama dan skor.
+Menampilkan pesan bahwa nama tidak ditemukan jika data tidak ada pada daftar hadir.
 
-Menampilkan data pemain sebelum dilakukan proses pengurutan sebagai pembanding.
+Menggunakan blok standar Python if __name__ == "__main__" agar program dapat dijalankan langsung.
 
-Melakukan perulangan untuk menampilkan seluruh data pemain yang telah dimasukkan.
-
-Memanggil fungsi exchange_sort untuk mengurutkan data berdasarkan skor tertinggi.
-
-Menampilkan hasil data setelah diurutkan.
-
-Melakukan perulangan kembali untuk menampilkan data yang sudah dalam kondisi terurut dari skor tertinggi ke terendah.
-
-Menjalankan fungsi utama menggunakan blok standar Python agar program dapat dieksekusi.
-
-Memastikan fungsi main hanya berjalan saat file dijalankan secara langsung.
+Memastikan fungsi main() hanya dijalankan saat file program dieksekusi secara langsung.
 
 
     OUTPUT PROGRAM
 
 
-   <img width="536" height="822" alt="Screenshot 2026-05-05 222209" src="https://github.com/user-attachments/assets/0dd2ce35-d759-403b-8e5b-cb2d1545520c" />
+   <img width="822" height="668" alt="Screenshot 2026-05-12 230353" src="https://github.com/user-attachments/assets/1b745c7c-e7fa-403f-8122-691c6f00aed9" />
 
    
 
-LINK : https://youtu.be/tqywAAjCEJA?si=ASpw_FvoeyDqSego
+LINK : 
