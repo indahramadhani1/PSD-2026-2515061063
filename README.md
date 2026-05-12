@@ -6,7 +6,8 @@ Program ini merupakan simulasi sistem sederhana untuk melakukan pengecekan nama 
 
 Source Code :
 
-<img width="898" height="495" alt="Screenshot 2026-05-12 230316" src="https://github.com/user-attachments/assets/b57f4349-46f2-41df-8071-f1a3fb2dcda1" />
+<img width="822" height="668" alt="Screenshot 2026-05-12 230353" src="https://github.com/user-attachments/assets/1b745c7c-e7fa-403f-8122-691c6f00aed9" />
+
 
 <img width="682" height="397" alt="Screenshot 2026-05-12 230331" src="https://github.com/user-attachments/assets/289f031c-78a2-46a5-ab73-02f73699555b" />
 
@@ -57,9 +58,7 @@ Memastikan fungsi main() hanya dijalankan saat file program dieksekusi secara la
 
     OUTPUT PROGRAM
 
-
-   <img width="822" height="668" alt="Screenshot 2026-05-12 230353" src="https://github.com/user-attachments/assets/1b745c7c-e7fa-403f-8122-691c6f00aed9" />
+    <img width="898" height="495" alt="Screenshot 2026-05-12 230316" src="https://github.com/user-attachments/assets/b57f4349-46f2-41df-8071-f1a3fb2dcda1" />
 
    
-
-LINK : 
+LINK : https://youtu.be/Jnrb_iqXSac?si=sJbA0FCTNVr2CkVZ
