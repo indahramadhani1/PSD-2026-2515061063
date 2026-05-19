@@ -1,8 +1,9 @@
-Tugas Akhir Percobaan 3
+Tugas Akhir Percobaan 4
 
-Judul Program : Sistem Pengecekan Nama Siswa di Daftar Hadir
+Judul Program : Sistem Antrian Pemesanan Tiket Bioskop Online
 
-Program ini merupakan simulasi sistem sederhana untuk melakukan pengecekan nama siswa pada daftar hadir kelas. Pengguna dapat memasukkan nama siswa yang ingin dicari, kemudian sistem akan memeriksa apakah nama tersebut terdapat pada daftar hadir dan menghitung berapa kali nama muncul. Hasil akhir berupa informasi apakah nama ditemukan atau tidak, beserta jumlah kemunculannya di dalam daftar hadir. Program ini menggunakan algoritma Sequential Searching, yaitu metode pencarian dengan cara memeriksa data satu per satu secara berurutan mulai dari elemen pertama hingga elemen terakhir. Jika data yang dicari ditemukan, maka sistem akan menghitung jumlah kemunculannya. Pendekatan ini sederhana dan mudah dipahami, sehingga cocok digunakan untuk pencarian data dalam jumlah kecil seperti daftar hadir siswa.
+Program ini merupakan simulasi sistem sederhana untuk mengatur antrian pemesanan tiket bioskop secara online. Pengguna dapat menambahkan data pemesan tiket, melayani pemesan berdasarkan urutan antrian, melihat pemesan paling depan, serta menampilkan seluruh daftar antrian yang sedang menunggu. Setiap data pemesan terdiri dari nama pemesan, judul film, dan jumlah tiket yang dipesan. Hasil akhir program berupa informasi data pemesan yang berhasil masuk ke antrian, data pemesan yang sedang dilayani, serta daftar seluruh antrian pemesanan tiket bioskop. Program ini menggunakan struktur data Queue Array dengan konsep FIFO (First In First Out), yaitu data yang pertama masuk akan menjadi data pertama yang dilayani. Implementasi queue dilakukan menggunakan array melingkar (circular queue) dengan bantuan variabel front_idx dan rear_idx untuk mengatur posisi depan dan belakang antrian. Pendekatan ini sederhana, efisien, dan cocok digunakan untuk sistem antrian seperti pemesanan tiket bioskop online.
+
 
 Source Code :
 
@@ -11,45 +12,103 @@ Source Code :
 
 <img width="682" height="397" alt="Screenshot 2026-05-12 230331" src="https://github.com/user-attachments/assets/289f031c-78a2-46a5-ab73-02f73699555b" />
 
-Mendefinisikan fungsi bernama sequential_search yang digunakan untuk mencari nama siswa pada daftar hadir menggunakan metode Sequential Searching.
+Mendefinisikan class bernama QueueArray yang digunakan untuk membuat sistem antrian pemesanan tiket bioskop online menggunakan struktur data queue array.
 
-Membuat variabel i dengan nilai awal 0 yang digunakan sebagai indeks untuk memulai pencarian dari data pertama.
+Mendefinisikan method __init__ untuk menginisialisasi ukuran maksimum queue, array penyimpanan data, serta posisi depan (front_idx) dan belakang (rear_idx) antrian.
 
-Membuat variabel counter dengan nilai awal 0 untuk menghitung jumlah nama yang ditemukan.
+Membuat variabel MAXN sebagai kapasitas maksimum antrian pemesanan tiket.
 
-Membuat perulangan while untuk memeriksa data satu per satu selama indeks masih kurang dari jumlah data.
+Membuat array q menggunakan list Python untuk menyimpan data pemesan tiket bioskop.
 
-Menampilkan nama yang sedang diperiksa agar pengguna dapat melihat proses pencarian berlangsung.
+Memberikan nilai awal -1 pada front_idx dan rear_idx sebagai penanda bahwa antrian masih kosong.
 
-Melakukan pengecekan apakah nama pada daftar sama dengan nama yang dicari.
+Mendefinisikan fungsi is_empty() untuk memeriksa apakah antrian kosong.
 
-Menambahkan nilai counter sebanyak 1 jika nama ditemukan.
+Mengembalikan nilai True jika front_idx bernilai -1, yang berarti belum ada data pemesan pada antrian.
 
-Menambahkan nilai indeks i agar proses berpindah ke data berikutnya.
+Mendefinisikan fungsi is_full() untuk memeriksa apakah kapasitas antrian sudah penuh.
 
-Mengulangi proses pengecekan hingga seluruh data selesai diperiksa.
+Menggunakan konsep circular queue dengan operasi modulo % untuk menentukan apakah posisi belakang antrian sudah kembali ke posisi depan.
 
-Mengembalikan nilai counter sebagai jumlah nama yang ditemukan pada daftar hadir.
+Mendefinisikan fungsi enqueue() untuk menambahkan data pemesan tiket ke dalam antrian.
 
-Mendefinisikan fungsi utama bernama main sebagai pusat jalannya program.
+Melakukan pengecekan terlebih dahulu apakah antrian penuh menggunakan fungsi is_full().
 
-Membuat list bernama data yang berisi daftar hadir siswa.
+Menampilkan pesan “Antrian pemesanan penuh!” jika kapasitas queue sudah tidak tersedia.
 
-Menghitung jumlah data pada daftar hadir menggunakan fungsi len() lalu menyimpannya ke variabel n.
+Melakukan pengecekan apakah antrian masih kosong menggunakan fungsi is_empty().
 
-Menampilkan seluruh daftar hadir siswa kepada pengguna.
+Mengatur nilai front_idx dan rear_idx menjadi 0 jika data pertama dimasukkan ke antrian.
 
-Meminta pengguna memasukkan nama yang ingin dicari pada daftar hadir.
+Menggeser posisi rear_idx ke belakang menggunakan operasi modulo jika antrian sudah memiliki data sebelumnya.
 
-Memanggil fungsi sequential_search untuk melakukan proses pencarian nama siswa.
+Menyimpan data pemesan tiket ke dalam array queue pada posisi rear_idx.
 
-Menyimpan hasil jumlah nama yang ditemukan ke dalam variabel counter.
+Menampilkan pesan bahwa data pemesanan tiket berhasil ditambahkan ke antrian.
 
-Melakukan pengecekan apakah nilai counter lebih besar dari 0 untuk mengetahui apakah nama ditemukan.
+Mendefinisikan fungsi dequeue() untuk melayani atau menghapus pemesan tiket dari bagian depan antrian.
 
-Menampilkan pesan bahwa nama ditemukan beserta jumlah kemunculannya jika data ada pada daftar hadir.
+Melakukan pengecekan apakah antrian kosong sebelum melayani pemesan.
 
-Menampilkan pesan bahwa nama tidak ditemukan jika data tidak ada pada daftar hadir.
+Menampilkan pesan “Antrian pemesanan kosong!” jika tidak ada data pada queue.
+
+Mengambil data pemesan pada posisi paling depan antrian menggunakan front_idx.
+
+Menampilkan informasi pemesan yang sedang dilayani berupa nama pemesan, judul film, dan jumlah tiket.
+
+Mengatur kembali front_idx dan rear_idx menjadi -1 jika setelah dequeue antrian menjadi kosong.
+
+Menggeser posisi front_idx ke data berikutnya menggunakan operasi modulo jika masih terdapat data pada queue.
+
+Mendefinisikan fungsi peek() untuk melihat data pemesan paling depan tanpa menghapus data dari antrian.
+
+Melakukan pengecekan apakah queue kosong sebelum menampilkan data.
+
+Mengambil data pemesan pada posisi paling depan menggunakan front_idx.
+
+Menampilkan data pemesan paling depan berupa nama pemesan, judul film, dan jumlah tiket.
+
+Mendefinisikan fungsi display() untuk menampilkan seluruh data pemesan tiket pada antrian.
+
+Melakukan pengecekan apakah antrian kosong sebelum menampilkan data.
+
+Membuat variabel i sebagai indeks awal dari posisi depan queue.
+
+Membuat variabel nomor untuk memberikan nomor urutan antrian.
+
+Menggunakan perulangan while True untuk menampilkan seluruh data queue dari depan hingga belakang.
+
+Menampilkan informasi setiap pemesan berupa nama pemesan, judul film, dan jumlah tiket.
+
+Menghentikan perulangan jika indeks sudah mencapai posisi rear_idx.
+
+Menggeser indeks menggunakan operasi modulo agar circular queue tetap berjalan dengan benar.
+
+Mendefinisikan fungsi main() sebagai pusat jalannya program.
+
+Membuat objek queue dari class QueueArray.
+
+Membuat variabel pilih untuk menyimpan pilihan menu dari pengguna.
+
+Menampilkan menu sistem antrian tiket bioskop online kepada pengguna.
+
+Meminta pengguna memilih menu yang tersedia seperti tambah pemesan, layani pemesan, melihat antrian depan, dan menampilkan seluruh antrian.
+
+Menggunakan blok try-except untuk menangani kesalahan input agar program tidak error saat pengguna memasukkan data yang tidak sesuai.
+
+Meminta pengguna memasukkan nama pemesan, judul film, dan jumlah tiket saat memilih menu tambah pemesan.
+
+Menyimpan data pemesan ke dalam dictionary Python sebelum dimasukkan ke queue.
+
+Memanggil fungsi enqueue() untuk menambahkan data pemesan ke antrian.
+
+Memanggil fungsi dequeue() saat pengguna memilih menu melayani pemesan.
+
+Memanggil fungsi peek() saat pengguna ingin melihat antrian paling depan.
+
+Memanggil fungsi display() saat pengguna ingin melihat seluruh daftar antrian.
+
+Menampilkan pesan “Program selesai.” saat pengguna memilih menu keluar.
 
 Menggunakan blok standar Python if __name__ == "__main__" agar program dapat dijalankan langsung.
 
@@ -61,4 +120,4 @@ Memastikan fungsi main() hanya dijalankan saat file program dieksekusi secara la
     <img width="898" height="495" alt="Screenshot 2026-05-12 230316" src="https://github.com/user-attachments/assets/b57f4349-46f2-41df-8071-f1a3fb2dcda1" />
 
    
-LINK : https://youtu.be/Jnrb_iqXSac?si=sJbA0FCTNVr2CkVZ
+LINK : 
