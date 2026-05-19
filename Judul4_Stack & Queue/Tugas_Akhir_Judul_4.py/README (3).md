@@ -6,6 +6,24 @@ Program ini merupakan simulasi sistem sederhana untuk mengatur antrian pemesanan
 
 
 Source Code :
+<img width="1115" height="988" alt="Screenshot 2026-05-19 224128" src="https://github.com/user-attachments/assets/7c8cbc90-8c6e-4985-9720-8f111a82b215" />
+
+<img width="1062" height="863" alt="Screenshot 2026-05-19 224140" src="https://github.com/user-attachments/assets/c00e5d9d-1c9f-4ea3-87d5-2673781dbd78" />
+
+
+<img width="862" height="896" alt="Screenshot 2026-05-19 224152" src="https://github.com/user-attachments/assets/2cc41eaa-14cd-4147-96cc-72fea11e21a5" />
+
+
+<img width="752" height="926" alt="Screenshot 2026-05-19 224207" src="https://github.com/user-attachments/assets/43e79692-5b39-4a57-926f-bdbd3ff67315" />
+
+
+<img width="755" height="865" alt="Screenshot 2026-05-19 224218" src="https://github.com/user-attachments/assets/0e124fc8-0e8d-4253-97f1-62f8e88989d6" />
+
+![Uploading Screenshot 2026-05-19 224218.png…]()
+
+
+
+
 
 
 
