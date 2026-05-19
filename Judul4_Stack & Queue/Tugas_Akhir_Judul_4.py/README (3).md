@@ -132,6 +132,26 @@ Memastikan fungsi main() hanya dijalankan saat file program dieksekusi secara la
 
     OUTPUT PROGRAM
 
+    <img width="650" height="741" alt="Screenshot 2026-05-19 223944" src="https://github.com/user-attachments/assets/1210967b-03cf-4168-b951-d176c87b6843" />
+
+    <img width="693" height="720" alt="Screenshot 2026-05-19 223957" src="https://github.com/user-attachments/assets/d19dd245-e367-40b9-ac50-dbe44217ff31" />
+
+    <img width="651" height="751" alt="Screenshot 2026-05-19 224008" src="https://github.com/user-attachments/assets/4c2d89c8-7c6d-4090-83c7-6d98dfa0eeea" />
+
+    <img width="596" height="835" alt="Screenshot 2026-05-19 224022" src="https://github.com/user-attachments/assets/a7f0f474-7bdf-4b19-b558-f743d31fe981" />
+
+    <img width="441" height="651" alt="Screenshot 2026-05-19 224037" src="https://github.com/user-attachments/assets/ec54175e-3bc4-4244-8d05-2d625c21510d" />
+
+    <img width="456" height="790" alt="Screenshot 2026-05-19 224046" src="https://github.com/user-attachments/assets/61987f9b-2fcb-43f4-9de3-52b1b59d7b65" />
+
+
+<img width="447" height="786" alt="Screenshot 2026-05-19 224056" src="https://github.com/user-attachments/assets/4a423e6d-a584-4726-a036-bcfb7b44b296" />
+
+
+<img width="591" height="606" alt="Screenshot 2026-05-19 224103" src="https://github.com/user-attachments/assets/c8c5b857-ceba-4337-8081-6e0dbc7172a7" />
+
+
+
    
    
 LINK : 
