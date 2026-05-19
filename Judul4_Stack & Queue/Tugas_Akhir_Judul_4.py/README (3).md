@@ -141,6 +141,7 @@ Memastikan fungsi main() hanya dijalankan saat file program dieksekusi secara la
     <img width="596" height="835" alt="Screenshot 2026-05-19 224022" src="https://github.com/user-attachments/assets/a7f0f474-7bdf-4b19-b558-f743d31fe981" />
 
     <img width="441" height="651" alt="Screenshot 2026-05-19 224037" src="https://github.com/user-attachments/assets/ec54175e-3bc4-4244-8d05-2d625c21510d" />
+    
 
     <img width="456" height="790" alt="Screenshot 2026-05-19 224046" src="https://github.com/user-attachments/assets/61987f9b-2fcb-43f4-9de3-52b1b59d7b65" />
 
@@ -149,9 +150,6 @@ Memastikan fungsi main() hanya dijalankan saat file program dieksekusi secara la
 
 
 <img width="591" height="606" alt="Screenshot 2026-05-19 224103" src="https://github.com/user-attachments/assets/c8c5b857-ceba-4337-8081-6e0dbc7172a7" />
-
-
-
    
    
-LINK : 
+LINK : https://youtu.be/RMPhspUNklU?si=jmtTXCUQP3Wsbm-x
