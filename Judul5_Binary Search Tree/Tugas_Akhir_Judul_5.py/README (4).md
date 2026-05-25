@@ -211,4 +211,4 @@ Memastikan fungsi main() hanya dijalankan saat file program dieksekusi secara la
 
    
    
-LINK : 
+LINK : https://youtu.be/GDBdjOfbvcw?si=yd0-HUt0UeqT_nOd
