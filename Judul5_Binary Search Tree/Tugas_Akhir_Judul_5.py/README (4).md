@@ -183,16 +183,16 @@ Memastikan fungsi main() hanya dijalankan saat file program dieksekusi secara la
     OUTPUT PROGRAM :
 
 
-    <img width="607" height="800" alt="Screenshot 2026-05-25 231148" src="https://github.com/user-attachments/assets/9cefdb16-1ce4-4740-8039-9bc6642c8255" />
+<img width="607" height="800" alt="Screenshot 2026-05-25 231148" src="https://github.com/user-attachments/assets/9cefdb16-1ce4-4740-8039-9bc6642c8255" />
 
 
-    <img width="396" height="840" alt="Screenshot 2026-05-25 231203" src="https://github.com/user-attachments/assets/5f7e4643-a833-47b1-b644-c00ef6f54a4a" />
+<img width="396" height="840" alt="Screenshot 2026-05-25 231203" src="https://github.com/user-attachments/assets/5f7e4643-a833-47b1-b644-c00ef6f54a4a" />
 
 
-    <img width="416" height="833" alt="Screenshot 2026-05-25 231216" src="https://github.com/user-attachments/assets/0c75c8fc-8faa-4283-a3a3-160127a7485e" />
+<img width="416" height="833" alt="Screenshot 2026-05-25 231216" src="https://github.com/user-attachments/assets/0c75c8fc-8faa-4283-a3a3-160127a7485e" />
 
 
-    <img width="437" height="835" alt="Screenshot 2026-05-25 231228" src="https://github.com/user-attachments/assets/38e1cb69-ea70-4c87-b795-1b4ab8fded9e" />
+<img width="437" height="835" alt="Screenshot 2026-05-25 231228" src="https://github.com/user-attachments/assets/38e1cb69-ea70-4c87-b795-1b4ab8fded9e" />
 
 
 
