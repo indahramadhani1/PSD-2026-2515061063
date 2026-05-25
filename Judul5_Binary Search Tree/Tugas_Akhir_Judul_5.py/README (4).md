@@ -7,6 +7,28 @@ Program ini merupakan simulasi sistem sederhana untuk mengelola daftar kontak HP
 
 Source Code :
 
+<img width="1113" height="981" alt="Screenshot 2026-05-25 231339" src="https://github.com/user-attachments/assets/f7ce8097-8e73-47f9-9ea3-79ed13b6e2fa" />
+
+
+<img width="960" height="892" alt="Screenshot 2026-05-25 231400" src="https://github.com/user-attachments/assets/72ec8db2-3c77-4897-8d26-3e61cbb22247" />
+
+
+<img width="1119" height="941" alt="Screenshot 2026-05-25 231415" src="https://github.com/user-attachments/assets/a268e782-1fc9-466b-bc0b-165867b95bb9" />
+
+
+<img width="867" height="977" alt="Screenshot 2026-05-25 231430" src="https://github.com/user-attachments/assets/9bbd5732-c559-4542-be6f-5a375013f511" />
+
+
+<img width="882" height="992" alt="Screenshot 2026-05-25 231446" src="https://github.com/user-attachments/assets/de9b135b-039c-4eb7-867a-1b7711afe16a" />
+
+
+<img width="889" height="999" alt="Screenshot 2026-05-25 231504" src="https://github.com/user-attachments/assets/486e5302-e3bf-48ba-a8c8-ab61a33e6775" />
+
+
+<img width="863" height="993" alt="Screenshot 2026-05-25 231518" src="https://github.com/user-attachments/assets/e3e20040-693a-43f4-b58f-bec2a4fedc41" />
+
+
+
 
 
 Mendefinisikan class bernama Node yang digunakan untuk menyimpan data kontak HP pada struktur data Binary Search Tree (BST).
@@ -158,7 +180,34 @@ Menggunakan blok standar Python if __name__ == "__main__" agar program dapat dij
 Memastikan fungsi main() hanya dijalankan saat file program dieksekusi secara langsung.
 
 
-    OUTPUT PROGRAM
+    OUTPUT PROGRAM :
+
+
+    <img width="607" height="800" alt="Screenshot 2026-05-25 231148" src="https://github.com/user-attachments/assets/9cefdb16-1ce4-4740-8039-9bc6642c8255" />
+
+
+    <img width="396" height="840" alt="Screenshot 2026-05-25 231203" src="https://github.com/user-attachments/assets/5f7e4643-a833-47b1-b644-c00ef6f54a4a" />
+
+
+    <img width="416" height="833" alt="Screenshot 2026-05-25 231216" src="https://github.com/user-attachments/assets/0c75c8fc-8faa-4283-a3a3-160127a7485e" />
+
+
+    <img width="437" height="835" alt="Screenshot 2026-05-25 231228" src="https://github.com/user-attachments/assets/38e1cb69-ea70-4c87-b795-1b4ab8fded9e" />
+
+
+
+<img width="475" height="762" alt="Screenshot 2026-05-25 231238" src="https://github.com/user-attachments/assets/1b9cb2f8-3978-42cf-9395-ce0e78f48979" />
+
+
+<img width="468" height="845" alt="Screenshot 2026-05-25 231249" src="https://github.com/user-attachments/assets/7cfcf946-1461-424d-b2b7-4031a15fc247" />
+
+
+
+<img width="417" height="837" alt="Screenshot 2026-05-25 231303" src="https://github.com/user-attachments/assets/456ed943-1a37-43a1-8292-239d2cce1791" />
+
+
+<img width="702" height="837" alt="Screenshot 2026-05-25 231314" src="https://github.com/user-attachments/assets/45611779-03d5-4c73-bb7f-42f58cecf01d" />
+
 
    
    
