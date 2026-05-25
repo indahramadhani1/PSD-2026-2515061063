@@ -9,101 +9,147 @@ Source Code :
 
 
 
-Mendefinisikan class bernama QueueArray yang digunakan untuk membuat sistem antrian pemesanan tiket bioskop online menggunakan struktur data queue array.
+Mendefinisikan class bernama Node yang digunakan untuk menyimpan data kontak HP pada struktur data Binary Search Tree (BST).
 
-Mendefinisikan method __init__ untuk menginisialisasi ukuran maksimum queue, array penyimpanan data, serta posisi depan (front_idx) dan belakang (rear_idx) antrian.
+Mendefinisikan method __init__ pada class Node untuk menginisialisasi nama kontak, nomor HP, serta pointer child kiri (left) dan child kanan (right).
 
-Membuat variabel MAXN sebagai kapasitas maksimum antrian pemesanan tiket.
+Menyimpan data nama kontak ke dalam variabel nama.
 
-Membuat array q menggunakan list Python untuk menyimpan data pemesan tiket bioskop.
+Menyimpan data nomor HP ke dalam variabel nomor.
 
-Memberikan nilai awal -1 pada front_idx dan rear_idx sebagai penanda bahwa antrian masih kosong.
+Memberikan nilai awal None pada child kiri dan child kanan sebagai penanda bahwa node belum memiliki cabang.
 
-Mendefinisikan fungsi is_empty() untuk memeriksa apakah antrian kosong.
+Mendefinisikan class bernama BSTKontak yang digunakan untuk mengelola sistem kontak HP menggunakan struktur data Binary Search Tree.
 
-Mengembalikan nilai True jika front_idx bernilai -1, yang berarti belum ada data pemesan pada antrian.
+Mendefinisikan method __init__ untuk menginisialisasi root BST.
 
-Mendefinisikan fungsi is_full() untuk memeriksa apakah kapasitas antrian sudah penuh.
+Memberikan nilai awal None pada variabel root sebagai penanda bahwa BST masih kosong.
 
-Menggunakan konsep circular queue dengan operasi modulo % untuk menentukan apakah posisi belakang antrian sudah kembali ke posisi depan.
+Mendefinisikan fungsi insert_node() untuk menambahkan data kontak baru ke dalam BST.
 
-Mendefinisikan fungsi enqueue() untuk menambahkan data pemesan tiket ke dalam antrian.
+Melakukan pengecekan apakah node root masih kosong.
 
-Melakukan pengecekan terlebih dahulu apakah antrian penuh menggunakan fungsi is_full().
+Membuat node baru menggunakan class Node jika posisi node masih kosong.
 
-Menampilkan pesan “Antrian pemesanan penuh!” jika kapasitas queue sudah tidak tersedia.
+Membandingkan nama kontak baru dengan nama pada node root menggunakan metode lower() agar pencarian tidak membedakan huruf besar dan kecil.
 
-Melakukan pengecekan apakah antrian masih kosong menggunakan fungsi is_empty().
+Menambahkan data kontak ke subtree kiri jika nama kontak lebih kecil dari root.
 
-Mengatur nilai front_idx dan rear_idx menjadi 0 jika data pertama dimasukkan ke antrian.
+Menambahkan data kontak ke subtree kanan jika nama kontak lebih besar dari root.
 
-Menggeser posisi rear_idx ke belakang menggunakan operasi modulo jika antrian sudah memiliki data sebelumnya.
+Mengembalikan node root setelah proses insert selesai dilakukan.
 
-Menyimpan data pemesan tiket ke dalam array queue pada posisi rear_idx.
+Mendefinisikan fungsi insert() untuk memanggil fungsi insert_node() dari root utama BST.
 
-Menampilkan pesan bahwa data pemesanan tiket berhasil ditambahkan ke antrian.
+Menyimpan hasil insert ke variabel root.
 
-Mendefinisikan fungsi dequeue() untuk melayani atau menghapus pemesan tiket dari bagian depan antrian.
+Mendefinisikan fungsi search_node() untuk mencari data kontak berdasarkan nama.
 
-Melakukan pengecekan apakah antrian kosong sebelum melayani pemesan.
+Melakukan pengecekan apakah node yang dicari kosong.
 
-Menampilkan pesan “Antrian pemesanan kosong!” jika tidak ada data pada queue.
+Mengembalikan nilai None jika data kontak tidak ditemukan.
 
-Mengambil data pemesan pada posisi paling depan antrian menggunakan front_idx.
+Membandingkan nama kontak yang dicari dengan nama pada node root.
 
-Menampilkan informasi pemesan yang sedang dilayani berupa nama pemesan, judul film, dan jumlah tiket.
+Mengembalikan node jika nama kontak ditemukan.
 
-Mengatur kembali front_idx dan rear_idx menjadi -1 jika setelah dequeue antrian menjadi kosong.
+Melakukan pencarian ke subtree kiri jika nama kontak lebih kecil dari root.
 
-Menggeser posisi front_idx ke data berikutnya menggunakan operasi modulo jika masih terdapat data pada queue.
+Melakukan pencarian ke subtree kanan jika nama kontak lebih besar dari root.
 
-Mendefinisikan fungsi peek() untuk melihat data pemesan paling depan tanpa menghapus data dari antrian.
+Mendefinisikan fungsi search() untuk memanggil fungsi search_node() dari root BST.
 
-Melakukan pengecekan apakah queue kosong sebelum menampilkan data.
+Mengembalikan hasil pencarian kontak kepada pengguna.
 
-Mengambil data pemesan pada posisi paling depan menggunakan front_idx.
+Mendefinisikan fungsi inorder() untuk menampilkan seluruh data kontak secara urut alfabet.
 
-Menampilkan data pemesan paling depan berupa nama pemesan, judul film, dan jumlah tiket.
+Melakukan traversal ke subtree kiri terlebih dahulu.
 
-Mendefinisikan fungsi display() untuk menampilkan seluruh data pemesan tiket pada antrian.
+Menampilkan data kontak berupa nama dan nomor HP pada node saat ini.
 
-Melakukan pengecekan apakah antrian kosong sebelum menampilkan data.
+Melakukan traversal ke subtree kanan setelah node ditampilkan.
 
-Membuat variabel i sebagai indeks awal dari posisi depan queue.
+Mendefinisikan fungsi preorder() untuk menampilkan data BST dengan urutan root, kiri, dan kanan.
 
-Membuat variabel nomor untuk memberikan nomor urutan antrian.
+Menampilkan data kontak pada node root terlebih dahulu.
 
-Menggunakan perulangan while True untuk menampilkan seluruh data queue dari depan hingga belakang.
+Melakukan traversal ke subtree kiri.
 
-Menampilkan informasi setiap pemesan berupa nama pemesan, judul film, dan jumlah tiket.
+Melakukan traversal ke subtree kanan.
 
-Menghentikan perulangan jika indeks sudah mencapai posisi rear_idx.
+Mendefinisikan fungsi postorder() untuk menampilkan data BST dengan urutan kiri, kanan, dan root.
 
-Menggeser indeks menggunakan operasi modulo agar circular queue tetap berjalan dengan benar.
+Melakukan traversal ke subtree kiri terlebih dahulu.
+
+Melakukan traversal ke subtree kanan.
+
+Menampilkan data kontak pada node terakhir.
+
+Mendefinisikan fungsi count_nodes() untuk menghitung jumlah seluruh kontak yang tersimpan pada BST.
+
+Mengembalikan nilai 0 jika node kosong.
+
+Menjumlahkan total node dari subtree kiri, subtree kanan, dan node saat ini.
+
+Mendefinisikan fungsi find_min() untuk mencari kontak dengan nama paling awal secara alfabet.
+
+Melakukan pengecekan apakah BST kosong.
+
+Membuat variabel current untuk menelusuri node BST.
+
+Melakukan perulangan menuju child kiri hingga mencapai node paling kiri.
+
+Mengembalikan node paling kiri sebagai data minimum.
+
+Mendefinisikan fungsi find_max() untuk mencari kontak dengan nama paling akhir secara alfabet.
+
+Melakukan pengecekan apakah BST kosong.
+
+Membuat variabel current untuk menelusuri node BST.
+
+Melakukan perulangan menuju child kanan hingga mencapai node paling kanan.
+
+Mengembalikan node paling kanan sebagai data maksimum.
 
 Mendefinisikan fungsi main() sebagai pusat jalannya program.
 
-Membuat objek queue dari class QueueArray.
+Membuat objek bst dari class BSTKontak.
 
 Membuat variabel pilih untuk menyimpan pilihan menu dari pengguna.
 
-Menampilkan menu sistem antrian tiket bioskop online kepada pengguna.
+Menampilkan menu sistem kontak HP menggunakan Binary Search Tree kepada pengguna.
 
-Meminta pengguna memilih menu yang tersedia seperti tambah pemesan, layani pemesan, melihat antrian depan, dan menampilkan seluruh antrian.
+Meminta pengguna memilih menu seperti tambah kontak, cari kontak, menampilkan traversal, dan melihat kontak minimum maupun maksimum.
 
 Menggunakan blok try-except untuk menangani kesalahan input agar program tidak error saat pengguna memasukkan data yang tidak sesuai.
 
-Meminta pengguna memasukkan nama pemesan, judul film, dan jumlah tiket saat memilih menu tambah pemesan.
+Meminta pengguna memasukkan nama kontak dan nomor HP saat memilih menu tambah kontak.
 
-Menyimpan data pemesan ke dalam dictionary Python sebelum dimasukkan ke queue.
+Memanggil fungsi insert() untuk menambahkan data kontak ke BST.
 
-Memanggil fungsi enqueue() untuk menambahkan data pemesan ke antrian.
+Menampilkan pesan bahwa kontak berhasil ditambahkan.
 
-Memanggil fungsi dequeue() saat pengguna memilih menu melayani pemesan.
+Meminta pengguna memasukkan nama kontak saat memilih menu pencarian kontak.
 
-Memanggil fungsi peek() saat pengguna ingin melihat antrian paling depan.
+Memanggil fungsi search() untuk mencari data kontak berdasarkan nama.
 
-Memanggil fungsi display() saat pengguna ingin melihat seluruh daftar antrian.
+Menampilkan informasi nama dan nomor HP jika kontak ditemukan.
+
+Menampilkan pesan “Kontak tidak ditemukan” jika data tidak tersedia pada BST.
+
+Memanggil fungsi inorder() saat pengguna ingin melihat daftar kontak secara urut alfabet.
+
+Memanggil fungsi preorder() saat pengguna memilih traversal preorder.
+
+Memanggil fungsi postorder() saat pengguna memilih traversal postorder.
+
+Memanggil fungsi find_min() saat pengguna ingin melihat kontak dengan nama paling awal.
+
+Menampilkan data kontak minimum berupa nama dan nomor HP.
+
+Memanggil fungsi find_max() saat pengguna ingin melihat kontak dengan nama paling akhir.
+
+Menampilkan data kontak maksimum berupa nama dan nomor HP.
 
 Menampilkan pesan “Program selesai.” saat pengguna memilih menu keluar.
 
