@@ -8,6 +8,30 @@ Source Code :
 
 
 
+
+<img width="491" height="484" alt="Screenshot 2026-06-09 201012" src="https://github.com/user-attachments/assets/6574f163-08cb-4048-b960-a2100e0e87be" />
+
+
+
+
+
+<img width="578" height="497" alt="Screenshot 2026-06-09 201030" src="https://github.com/user-attachments/assets/6791b11d-65d9-4569-a20f-b734f93e2920" />
+
+
+
+
+
+<img width="596" height="475" alt="Screenshot 2026-06-09 201101" src="https://github.com/user-attachments/assets/ea6b6a1a-46c5-4290-b97e-448b56802213" />
+
+
+
+
+<img width="428" height="443" alt="Screenshot 2026-06-09 201111" src="https://github.com/user-attachments/assets/7a7ce1c0-7469-421b-b955-461cc73ef9f8" />
+
+
+
+
+
 Mendefinisikan class bernama SlotState yang digunakan untuk menyimpan status setiap slot pada hash table.
 
 Mendefinisikan konstanta EMPTY sebagai penanda bahwa slot masih kosong.
@@ -114,7 +138,10 @@ Menggunakan blok standar Python if name == "main" agar program dapat dijalankan 
 
 Memastikan fungsi main() hanya dieksekusi ketika file program dijalankan sebagai program utama.
 
-OUTPUT PROGRAM
+OUTPUT PROGRAM :
+
+<img width="316" height="449" alt="Screenshot 2026-06-09 200843" src="https://github.com/user-attachments/assets/7e17aed0-8c6f-4344-9fdb-92748008fe7c" />
+
 
    
    
