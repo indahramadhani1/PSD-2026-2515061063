@@ -8,156 +8,113 @@ Source Code :
 
 
 
-Mendefinisikan class bernama Node yang digunakan untuk menyimpan data kontak HP pada struktur data Binary Search Tree (BST).
+Mendefinisikan class bernama SlotState yang digunakan untuk menyimpan status setiap slot pada hash table.
 
-Mendefinisikan method __init__ pada class Node untuk menginisialisasi nama kontak, nomor HP, serta pointer child kiri (left) dan child kanan (right).
+Mendefinisikan konstanta EMPTY sebagai penanda bahwa slot masih kosong.
 
-Menyimpan data nama kontak ke dalam variabel nama.
+Mendefinisikan konstanta OCCUPIED sebagai penanda bahwa slot sedang digunakan untuk menyimpan data.
 
-Menyimpan data nomor HP ke dalam variabel nomor.
+Mendefinisikan konstanta DELETED sebagai penanda bahwa data pada slot telah dihapus.
 
-Memberikan nilai awal None pada child kiri dan child kanan sebagai penanda bahwa node belum memiliki cabang.
+Mendefinisikan class bernama Entry yang digunakan untuk menyimpan pasangan data NPM dan nilai mahasiswa pada hash table.
 
-Mendefinisikan class bernama BSTKontak yang digunakan untuk mengelola sistem kontak HP menggunakan struktur data Binary Search Tree.
+Mendefinisikan method init pada class Entry untuk menginisialisasi key, value, dan state.
 
-Mendefinisikan method __init__ untuk menginisialisasi root BST.
+Memberikan nilai awal None pada variabel key sebagai penanda belum ada NPM yang tersimpan.
 
-Memberikan nilai awal None pada variabel root sebagai penanda bahwa BST masih kosong.
+Memberikan nilai awal None pada variabel value sebagai penanda belum ada nilai mahasiswa yang tersimpan.
 
-Mendefinisikan fungsi insert_node() untuk menambahkan data kontak baru ke dalam BST.
+Memberikan nilai awal SlotState.EMPTY pada variabel state sebagai penanda slot masih kosong.
 
-Melakukan pengecekan apakah node root masih kosong.
+Mendefinisikan class bernama HashMapOpenAddressing yang digunakan untuk mengelola data nilai mahasiswa menggunakan Hash Map Open Addressing.
 
-Membuat node baru menggunakan class Node jika posisi node masih kosong.
+Mendefinisikan method init untuk menginisialisasi ukuran hash table.
 
-Membandingkan nama kontak baru dengan nama pada node root menggunakan metode lower() agar pencarian tidak membedakan huruf besar dan kecil.
+Menyimpan ukuran hash table ke dalam variabel SIZE.
 
-Menambahkan data kontak ke subtree kiri jika nama kontak lebih kecil dari root.
+Membuat hash table berupa list yang berisi objek Entry sebanyak ukuran yang ditentukan.
 
-Menambahkan data kontak ke subtree kanan jika nama kontak lebih besar dari root.
+Mendefinisikan fungsi hash_function() untuk menghitung indeks penyimpanan berdasarkan NPM mahasiswa.
 
-Mengembalikan node root setelah proses insert selesai dilakukan.
+Menggunakan operasi modulo (%) untuk menghasilkan indeks yang berada dalam rentang ukuran hash table.
 
-Mendefinisikan fungsi insert() untuk memanggil fungsi insert_node() dari root utama BST.
+Mendefinisikan fungsi insert() untuk menambahkan data nilai mahasiswa ke dalam hash table.
 
-Menyimpan hasil insert ke variabel root.
+Menghitung indeks awal menggunakan fungsi hash_function().
 
-Mendefinisikan fungsi search_node() untuk mencari data kontak berdasarkan nama.
+Membuat variabel first_deleted untuk menyimpan lokasi slot yang berstatus DELETED.
 
-Melakukan pengecekan apakah node yang dicari kosong.
+Melakukan perulangan linear probing untuk mencari slot yang tersedia.
 
-Mengembalikan nilai None jika data kontak tidak ditemukan.
+Melakukan pengecekan apakah slot sedang digunakan.
 
-Membandingkan nama kontak yang dicari dengan nama pada node root.
+Memperbarui nilai jika NPM yang dimasukkan sudah ada pada hash table.
 
-Mengembalikan node jika nama kontak ditemukan.
+Menyimpan posisi slot DELETED jika ditemukan selama proses pencarian.
 
-Melakukan pencarian ke subtree kiri jika nama kontak lebih kecil dari root.
+Menambahkan data NPM dan nilai mahasiswa ke slot kosong yang ditemukan.
 
-Melakukan pencarian ke subtree kanan jika nama kontak lebih besar dari root.
+Mengubah status slot menjadi OCCUPIED setelah data berhasil disimpan.
 
-Mendefinisikan fungsi search() untuk memanggil fungsi search_node() dari root BST.
+Mengembalikan nilai True jika proses insert berhasil dilakukan.
 
-Mengembalikan hasil pencarian kontak kepada pengguna.
+Mengembalikan nilai False jika hash table sudah penuh.
 
-Mendefinisikan fungsi inorder() untuk menampilkan seluruh data kontak secara urut alfabet.
+Mendefinisikan fungsi search() untuk mencari data mahasiswa berdasarkan NPM.
 
-Melakukan traversal ke subtree kiri terlebih dahulu.
+Menghitung indeks awal menggunakan fungsi hash_function().
 
-Menampilkan data kontak berupa nama dan nomor HP pada node saat ini.
+Melakukan proses linear probing untuk mencari data.
 
-Melakukan traversal ke subtree kanan setelah node ditampilkan.
+Mengembalikan nilai None jika ditemukan slot EMPTY yang menandakan data tidak ada.
 
-Mendefinisikan fungsi preorder() untuk menampilkan data BST dengan urutan root, kiri, dan kanan.
+Mengembalikan objek Entry jika NPM ditemukan pada hash table.
 
-Menampilkan data kontak pada node root terlebih dahulu.
+Mendefinisikan fungsi remove_key() untuk menghapus data mahasiswa berdasarkan NPM.
 
-Melakukan traversal ke subtree kiri.
+Memanggil fungsi search() untuk mencari data yang akan dihapus.
 
-Melakukan traversal ke subtree kanan.
+Mengembalikan nilai False jika data tidak ditemukan.
 
-Mendefinisikan fungsi postorder() untuk menampilkan data BST dengan urutan kiri, kanan, dan root.
+Mengubah status slot menjadi DELETED jika data ditemukan.
 
-Melakukan traversal ke subtree kiri terlebih dahulu.
+Mengembalikan nilai True jika penghapusan berhasil dilakukan.
 
-Melakukan traversal ke subtree kanan.
+Mendefinisikan fungsi display() untuk menampilkan seluruh isi hash table.
 
-Menampilkan data kontak pada node terakhir.
+Menampilkan indeks setiap slot pada hash table.
 
-Mendefinisikan fungsi count_nodes() untuk menghitung jumlah seluruh kontak yang tersimpan pada BST.
+Menampilkan status EMPTY jika slot masih kosong.
 
-Mengembalikan nilai 0 jika node kosong.
+Menampilkan status DELETED jika data pada slot telah dihapus.
 
-Menjumlahkan total node dari subtree kiri, subtree kanan, dan node saat ini.
-
-Mendefinisikan fungsi find_min() untuk mencari kontak dengan nama paling awal secara alfabet.
-
-Melakukan pengecekan apakah BST kosong.
-
-Membuat variabel current untuk menelusuri node BST.
-
-Melakukan perulangan menuju child kiri hingga mencapai node paling kiri.
-
-Mengembalikan node paling kiri sebagai data minimum.
-
-Mendefinisikan fungsi find_max() untuk mencari kontak dengan nama paling akhir secara alfabet.
-
-Melakukan pengecekan apakah BST kosong.
-
-Membuat variabel current untuk menelusuri node BST.
-
-Melakukan perulangan menuju child kanan hingga mencapai node paling kanan.
-
-Mengembalikan node paling kanan sebagai data maksimum.
+Menampilkan pasangan NPM dan nilai mahasiswa jika slot berisi data.
 
 Mendefinisikan fungsi main() sebagai pusat jalannya program.
 
-Membuat objek bst dari class BSTKontak.
+Membuat objek hashmap dari class HashMapOpenAddressing.
 
-Membuat variabel pilih untuk menyimpan pilihan menu dari pengguna.
+Menambahkan beberapa data mahasiswa menggunakan fungsi insert().
 
-Menampilkan menu sistem kontak HP menggunakan Binary Search Tree kepada pengguna.
+Menampilkan seluruh isi hash table menggunakan fungsi display().
 
-Meminta pengguna memilih menu seperti tambah kontak, cari kontak, menampilkan traversal, dan melihat kontak minimum maupun maksimum.
+Memanggil fungsi search() untuk mencari data mahasiswa berdasarkan NPM.
 
-Menggunakan blok try-except untuk menangani kesalahan input agar program tidak error saat pengguna memasukkan data yang tidak sesuai.
+Menampilkan nilai mahasiswa jika data ditemukan.
 
-Meminta pengguna memasukkan nama kontak dan nomor HP saat memilih menu tambah kontak.
+Menampilkan pesan bahwa data tidak ditemukan jika NPM tidak ada pada hash table.
 
-Memanggil fungsi insert() untuk menambahkan data kontak ke BST.
+Memanggil fungsi remove_key() untuk menghapus data mahasiswa berdasarkan NPM.
 
-Menampilkan pesan bahwa kontak berhasil ditambahkan.
+Menampilkan kembali isi hash table setelah proses penghapusan dilakukan.
 
-Meminta pengguna memasukkan nama kontak saat memilih menu pencarian kontak.
+Melakukan pencarian ulang untuk memastikan data mahasiswa lain masih tersimpan pada hash table.
 
-Memanggil fungsi search() untuk mencari data kontak berdasarkan nama.
+Menggunakan blok standar Python if name == "main" agar program dapat dijalankan secara langsung.
 
-Menampilkan informasi nama dan nomor HP jika kontak ditemukan.
+Memastikan fungsi main() hanya dieksekusi ketika file program dijalankan sebagai program utama.
 
-Menampilkan pesan “Kontak tidak ditemukan” jika data tidak tersedia pada BST.
-
-Memanggil fungsi inorder() saat pengguna ingin melihat daftar kontak secara urut alfabet.
-
-Memanggil fungsi preorder() saat pengguna memilih traversal preorder.
-
-Memanggil fungsi postorder() saat pengguna memilih traversal postorder.
-
-Memanggil fungsi find_min() saat pengguna ingin melihat kontak dengan nama paling awal.
-
-Menampilkan data kontak minimum berupa nama dan nomor HP.
-
-Memanggil fungsi find_max() saat pengguna ingin melihat kontak dengan nama paling akhir.
-
-Menampilkan data kontak maksimum berupa nama dan nomor HP.
-
-Menampilkan pesan “Program selesai.” saat pengguna memilih menu keluar.
-
-Menggunakan blok standar Python if __name__ == "__main__" agar program dapat dijalankan langsung.
-
-Memastikan fungsi main() hanya dijalankan saat file program dieksekusi secara langsung.
-
-
-    OUTPUT PROGRAM
+OUTPUT PROGRAM
 
    
    
