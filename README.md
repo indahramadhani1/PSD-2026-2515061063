@@ -1,9 +1,8 @@
-Tugas Akhir Percobaan 5
+Tugas Akhir Percobaan 6
 
-Judul Program : Sistem Kontak HP Menggunakan Binary Search Tree (BST)
+Judul Program : Sistem Nilai Mahasiswa Menggunakan Hash Map Open Addressing
 
-Program ini merupakan simulasi sistem sederhana untuk mengelola daftar kontak HP menggunakan struktur data Binary Search Tree (BST). Pengguna dapat menambahkan data kontak, mencari kontak berdasarkan nama, menampilkan seluruh daftar kontak secara terurut, melihat kontak dengan nama paling awal maupun paling akhir, serta menghitung jumlah seluruh kontak yang tersimpan. Setiap data kontak terdiri dari nama kontak dan nomor HP. Hasil akhir program berupa informasi data kontak yang berhasil disimpan, hasil pencarian kontak, serta daftar seluruh kontak yang ditampilkan secara alfabetis. Program ini menggunakan struktur data Binary Search Tree (BST), yaitu struktur data pohon biner yang memiliki aturan bahwa data pada subtree kiri lebih kecil dari root dan data pada subtree kanan lebih besar dari root. Implementasi BST dilakukan menggunakan class Node untuk menyimpan data kontak dan pointer ke child kiri maupun kanan, serta class BSTKontak untuk mengatur proses insert, search, traversal, dan operasi lainnya. Traversal inorder digunakan untuk menampilkan daftar kontak secara urut berdasarkan nama. Pendekatan ini sederhana, efisien, dan cocok digunakan untuk sistem pencarian data seperti daftar kontak HP karena mampu mempercepat proses pencarian dan pengelompokan data secara terstruktur.
-
+Program ini merupakan sistem sederhana untuk mengelola data nilai mahasiswa menggunakan struktur data Hash Map dengan metode Open Addressing (Linear Probing). Setiap data terdiri dari NPM sebagai *key* dan nilai mahasiswa sebagai *value*. Program dapat digunakan untuk menambahkan data mahasiswa, mencari nilai berdasarkan NPM, menghapus data, serta menampilkan seluruh data yang tersimpan dalam hash table. Implementasi program menggunakan class Entry untuk menyimpan pasangan key-value, class SlotState untuk menandai kondisi slot (EMPTY, OCCUPIED, dan DELETED), serta class HashMapOpenAddressing untuk mengelola operasi insert, search, remove, dan display. Collision ditangani menggunakan teknik Linear Probing, yaitu mencari slot kosong berikutnya ketika indeks hasil hash sudah terisi. Pendekatan ini sederhana, efisien, dan cocok digunakan untuk sistem pencarian data mahasiswa karena memungkinkan proses penyimpanan, pencarian, dan penghapusan data dilakukan dengan cepat.
 
 Source Code :
 
